@@ -1,4 +1,5 @@
 #include "charybdis.dtsi"
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 
 &default_transform {
 	col-offset = <6>;
@@ -48,17 +49,16 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-
-        /*   optional features   */
-        snipe-layers = <6>;  // SNIPING layer
-        scroll-layers = <5>; // SCROLL layer
-        /* automouse-layer = <1>; */ // POINTER layer if needed
+        cpi = <800>;
+        swap-xy;
+        invert-x;
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
     };
 };
 
-/ {
-  trackball_listener {
-    compatible = "zmk,input-listener";
+&trackball_listener {
+    status = "okay";
     device = <&trackball>;
-  };
 };
