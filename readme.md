@@ -54,7 +54,7 @@ This configuration supports two modes:
 
 ## BOM
 
-Here is the BOM for this project: [BOM Charybdis 4x6 Wireless](/docs/bom/readme.md)
+See the full [Bill of Materials](/docs/bom/readme.md) for electronics, PCBs, fabrication files (ready-to-upload gerbers for PCBWay/JLCPCB), and 3D print files.
 
 ### Additional Components for Dongle Mode
 
