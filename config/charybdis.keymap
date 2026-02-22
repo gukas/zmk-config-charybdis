@@ -195,7 +195,7 @@
     &hml LCTRL BACKSLASH        &kp Z         &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &kp FSLH      &hmr RCTRL MINUS
 // ╰───────────────────────────┴─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 //               ╭─────────────┬────────────────┬──────────────────┬─────────────┬─────────────╮   ╭────────────────┬─────────────────────┬─────────────╮
-                  &kp TAB       &blt LOWER SPACE &blt POINTER ENTER &mkp RCLK     &mkp LCLK         &blt SYMBOLS ESC &blt RAISE BACKSPACE  &kp DELETE     
+                  &kp TAB       &blt LOWER SPACE &blt POINTER ENTER &mkp LCLK     &mkp RCLK         &blt RAISE BACKSPACE &kp DELETE &blt SYMBOLS ESC       
 //               ╰─────────────┴────────────────┴──────────────────┴─────────────┴─────────────╯   ╰────────────────┴─────────────────────┴─────────────╯
       >;
     };
