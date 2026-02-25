@@ -64,7 +64,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             require-prior-idle-ms = <150>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
@@ -79,7 +79,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             require-prior-idle-ms = <150>;
-            tapping-term-ms = <280>;
+            tapping-term-ms = <180>;
             quick-tap-ms = <175>;
             bindings = <&kp>, <&kp>;
 
@@ -201,12 +201,12 @@
             label = "BASE";
             display-name = "Base";
             bindings = <
-&kp ESC                      &kp N1  &kp N2  &kp N3         &kp N4                &kp N5                &kp N6            &kp N7     &kp N8         &kp N9   &kp N0    &kp BACKSPACE
-&hml LEFT_WIN RIGHT_BRACKET  &kp Q   &kp W   &kp E          &kp R                 &kp T                 &kp Y             &kp U      &kp I          &kp O    &kp P     &hmr RIGHT_WIN LEFT_BRACKET
-&hml LEFT_ALT GRAVE          &kp A   &kp S   &hml LSHIFT D  &kp F                 &kp G                 &kp H             &kp J      &hmr RSHIFT K  &kp L    &kp SEMI  &hmr RIGHT_ALT SINGLE_QUOTE
-&hml LCTRL BACKSLASH         &kp Z   &kp X   &kp C          &kp V                 &kp B                 &kp N             &kp M      &kp COMMA      &kp DOT  &kp FSLH  &hmr RCTRL MINUS
-                                             &kp TAB        &blt LOWER SPACE      &blt POINTER ENTER    &mkp LCLK         &mkp RCLK
-                                                            &blt RAISE BACKSPACE  &kp DELETE            &blt SYMBOLS ESC
+&kp ESC                      &kp LS(N1)  &kp LS(N2)  &kp LS(N3)     &kp LS(N4)             &kp LS(N5)          &kp LS(N6)          &kp LS(N7)  &kp LS(N8)     &kp LS(N9)  &kp LS(N0)  &kp BACKSPACE
+&hml LEFT_WIN RIGHT_BRACKET  &kp Q       &kp W       &kp E          &kp R                  &kp T               &kp Y               &kp U       &kp I          &kp O       &kp P       &hmr RIGHT_WIN LEFT_BRACKET
+&hml LEFT_ALT GRAVE          &kp A       &kp S       &hml LSHIFT D  &kp F                  &kp G               &kp H               &kp J       &hmr RSHIFT K  &kp L       &kp SEMI    &hmr RIGHT_ALT SINGLE_QUOTE
+&hml LCTRL BACKSLASH         &kp Z       &kp X       &kp C          &kp V                  &kp B               &kp N               &kp M       &kp COMMA      &kp DOT     &kp FSLH    &hmr RCTRL MINUS
+                                                     &ls_mclk       &blt LOWER SPACE       &blt POINTER TAB    &mkp LCLK           &mkp RCLK
+                                                                    &blt RAISE LEFT_SHIFT  &kp DELETE          &blt SYMBOLS ENTER
             >;
         };
 
@@ -214,12 +214,12 @@
             label = "POINTER";
             display-name = "Pointer";
             bindings = <
-&trans        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5       &kp F6         &kp F7              &kp F8          &kp F9               &kp F10    &trans
-&trans        &none      &none      &mo 5      &mkp MB4   &mkp MB5     &kp PAGE_UP    &kp HOME            &kp UP          &kp END              &kp F11    &kp F12
-&kp CAPSLOCK  &kp LC(A)  &ls_mclk   &mkp RCLK  &mkp LCLK  &mkp MCLK    &kp PAGE_DOWN  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT            &kp MINUS  &kp EQUAL
-&trans        &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &mo 6        &kp PSCRN      &kp LC(LEFT_ARROW)  &none           &kp LC(RIGHT_ARROW)  &kp LBKT   &kp RBKT
-                                    &trans     &trans     &trans       &trans         &trans
-                                               &trans     &trans       &trans
+&trans        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                &kp F6         &kp F7              &kp F8          &kp F9               &kp F10    &trans
+&trans        &none      &none      &mo 6      &mkp MB4   &mkp MB5              &kp PAGE_UP    &kp HOME            &kp UP          &kp END              &kp F11    &kp F12
+&kp CAPSLOCK  &kp LC(A)  &ls_mclk   &mkp RCLK  &mkp LCLK  &mkp MCLK             &kp PAGE_DOWN  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT            &kp MINUS  &kp EQUAL
+&trans        &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LA(LEFT_SHIFT)    &kp PSCRN      &kp LC(LEFT_ARROW)  &none           &kp LC(RIGHT_ARROW)  &kp LBKT   &kp RBKT
+                                    &trans     &trans     &trans                &trans         &trans
+                                               &trans     &trans                &trans
             >;
         };
 
