@@ -202,9 +202,9 @@
             display-name = "Base";
             bindings = <
 &kp ESC                      &kp LS(N1)  &kp LS(N2)  &kp LS(N3)     &kp LS(N4)        &kp LS(N5)          &kp LS(N6)               &kp LS(N7)  &kp LS(N8)     &kp LS(N9)  &kp LS(N0)  &kp BACKSPACE
-&hml LEFT_WIN RIGHT_BRACKET  &kp Q       &kp W       &kp E          &kp R             &kp T               &kp Y                    &kp U       &kp I          &kp O       &kp P       &hmr RIGHT_WIN LEFT_BRACKET
-&hml LEFT_ALT GRAVE          &kp A       &kp S       &hml LSHIFT D  &kp F             &kp G               &kp H                    &kp J       &hmr RSHIFT K  &kp L       &kp SEMI    &hmr RIGHT_ALT SINGLE_QUOTE
-&hml LCTRL BACKSLASH         &kp Z       &kp X       &kp C          &kp V             &kp B               &kp N                    &kp M       &kp COMMA      &kp DOT     &kp FSLH    &hmr RCTRL MINUS
+&hml LEFT_ALT RIGHT_BRACKET  &kp Q       &kp W       &kp E          &kp R             &kp T               &kp Y                    &kp U       &kp I          &kp O       &kp P       &hmr RIGHT_WIN LEFT_BRACKET
+&hml LCTRL GRAVE             &kp A       &kp S       &hml LSHIFT D  &kp F             &kp G               &kp H                    &kp J       &hmr RSHIFT K  &kp L       &kp SEMI    &hmr RIGHT_ALT SINGLE_QUOTE
+&hml LEFT_SHIFT BACKSLASH    &kp Z       &kp X       &kp C          &kp V             &kp B               &kp N                    &kp M       &kp COMMA      &kp DOT     &kp FSLH    &hmr RCTRL MINUS
                                                      &mkp MCLK      &blt LOWER SPACE  &blt POINTER TAB    &mkp LCLK                &mkp RCLK
                                                                     &blt RAISE ENTER  &kp DELETE          &blt SYMBOLS LEFT_SHIFT
             >;
@@ -215,8 +215,8 @@
             display-name = "Pointer";
             bindings = <
 &trans        &kp F1     &kp F2     &kp F3     &kp F4     &kp F5                &kp F6         &kp F7              &kp F8          &kp F9               &kp F10    &trans
-&trans        &none      &none      &mo 6      &mkp MB4   &mkp MB5              &kp PAGE_UP    &kp HOME            &kp UP          &kp END              &kp F11    &kp F12
-&kp CAPSLOCK  &kp LC(A)  &ls_mclk   &mkp RCLK  &mkp LCLK  &mkp MCLK             &kp PAGE_DOWN  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT            &kp MINUS  &kp EQUAL
+&trans        &none      &none      &mo 6      &kp LC(R)  &none                 &kp PAGE_UP    &kp HOME            &kp UP          &kp END              &kp F11    &kp F12
+&kp CAPSLOCK  &kp LC(A)  &ls_mclk   &mkp RCLK  &kp LC(F)  &mkp MCLK             &kp PAGE_DOWN  &kp LEFT_ARROW      &kp DOWN_ARROW  &kp RIGHT            &kp MINUS  &kp EQUAL
 &trans        &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LA(LEFT_SHIFT)    &kp PSCRN      &kp LC(LEFT_ARROW)  &none           &kp LC(RIGHT_ARROW)  &kp LBKT   &kp RBKT
                                     &trans     &trans     &trans                &trans         &trans
                                                &trans     &trans                &trans
@@ -240,12 +240,12 @@
             label = "RAISE";
             display-name = "MEDIA";
             bindings = <
-&kp ESC  &kp F1  &kp F2      &kp F3        &kp F4         &kp F5           &kp F6        &kp F7          &kp F8        &kp F9        &kp F10  &trans
-&trans   &trans  &trans      &kp C_VOL_UP  &kp LG(MINUS)  &kp LG(EQUAL)    &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &kp F11  &kp F12
-&trans   &none   &kp C_PREV  &kp C_PP      &kp C_NEXT     &kp LG(N0)       &kp F23       &kp F24         &none         &none         &none    &bootloader
-&trans   &none   &none       &kp C_VOL_DN  &kp C_MUTE     &none            &bt BT_CLR    &bt BT_CLR_ALL  &none         &none         &none    &none
-                             &trans        &trans         &trans           &trans        &trans
-                                           &trans         &trans           &trans
+&trans  &kp F1  &kp F2      &kp F3            &kp F4           &kp F5    &kp F6        &kp F7          &kp F8        &kp F9        &kp F10  &trans
+&trans  &none   &kp C_PREV  &kp C_PLAY_PAUSE  &kp LG(C_NEXT)   &none     &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &kp F11  &kp F12
+&trans  &none   &kp C_MUTE  &kp C_VOL_DN      &kp C_VOLUME_UP  &none     &kp F23       &kp F24         &none         &none         &none    &bootloader
+&trans  &none   &none       &none             &none            &none     &bt BT_CLR    &bt BT_CLR_ALL  &none         &none         &none    &none
+                            &trans            &trans           &trans    &trans        &trans
+                                              &trans           &trans    &trans
             >;
         };
 
